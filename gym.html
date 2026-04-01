@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iron Forge Fitness</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter, sans-serif;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.8);
+backdrop-filter:blur(10px);
+padding:18px 0;
+z-index:1000;
+}
+
+.nav-inner{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:800;
+color:#ff3b30;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1400") center/cover;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+opacity:.8;
+margin-bottom:30px;
+}
+
+.btn{
+padding:14px 28px;
+border-radius:6px;
+border:none;
+cursor:pointer;
+font-weight:600;
+}
+
+.btn-primary{
+background:#ff3b30;
+color:white;
+}
+
+.btn-outline{
+border:1px solid #ff3b30;
+color:#ff3b30;
+background:transparent;
+}
+
+.section{
+padding:90px 0;
+}
+
+.section-title{
+font-size:36px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+gap:25px;
+}
+
+.grid-3{
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:10px;
+transition:.3s;
+border:1px solid #1c1c1c;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#ff3b30;
+}
+
+.trainer-card img{
+width:100%;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.pricing{
+text-align:center;
+}
+
+.price{
+font-size:40px;
+font-weight:800;
+margin:10px 0;
+}
+
+.highlight{
+border:2px solid #ff3b30;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+background:#111;
+border:1px solid #222;
+color:white;
+border-radius:6px;
+}
+
+.footer{
+background:#050505;
+padding:40px 0;
+text-align:center;
+opacity:.7;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+}
+
+iframe{
+width:100%;
+height:350px;
+border:none;
+border-radius:10px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:36px;
+}
+.nav-links{
+display:none;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+<div class="container nav-inner">
+<div class="logo">IRON FORGE</div>
+<div class="nav-links">
+<a href="#">About</a>
+<a href="#">Programs</a>
+<a href="#">Trainers</a>
+<a href="#">Pricing</a>
+<a href="#">Contact</a>
+</div>
+</div>
+</div>
+
+<section class="hero">
+<div class="container">
+<h1>Train Hard. Transform Your Body.</h1>
+<p>Join the most motivating fitness community in your city</p>
+<button class="btn btn-primary">Start Free Trial</button>
+<button class="btn btn-outline">View Pricing</button>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Programs</h2>
+<div class="grid grid-3">
+<div class="card">Weight Loss Program</div>
+<div class="card">Muscle Gain Training</div>
+<div class="card">Strength Training</div>
+<div class="card">Personal Training</div>
+<div class="card">Group Classes</div>
+<div class="card">Functional Training</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Meet Our Trainers</h2>
+
+<div class="grid grid-3">
+
+<div class="card trainer-card">
+<img src="https://images.unsplash.com/photo-1550345332-09e3ac987658">
+<h3>Rahul Sharma</h3>
+<p>Head Strength Coach</p>
+</div>
+
+<div class="card trainer-card">
+<img src="https://images.unsplash.com/photo-1549476464-37392f717541">
+<h3>Arjun Das</h3>
+<p>Fat Loss Specialist</p>
+</div>
+
+<div class="card trainer-card">
+<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+<h3>Neha Kapoor</h3>
+<p>Personal Trainer</p>
+</div>
+
+<div class="card trainer-card">
+<img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c">
+<h3>Vikram Singh</h3>
+<p>Strength Coach</p>
+</div>
+
+<div class="card trainer-card">
+<img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb">
+<h3>Riya Patel</h3>
+<p>Functional Trainer</p>
+</div>
+
+<div class="card trainer-card">
+<img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a">
+<h3>Karan Mehta</h3>
+<p>Muscle Gain Expert</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Pricing</h2>
+
+<div class="grid grid-3">
+
+<div class="card pricing">
+<h3>Basic</h3>
+<div class="price">₹999</div>
+<p>Gym Access</p>
+<p>Cardio</p>
+<button class="btn btn-primary">Join Now</button>
+</div>
+
+<div class="card pricing highlight">
+<h3>Standard</h3>
+<div class="price">₹1499</div>
+<p>Gym Access</p>
+<p>Classes</p>
+<p>Diet Plan</p>
+<button class="btn btn-primary">Most Popular</button>
+</div>
+
+<div class="card pricing">
+<h3>Premium</h3>
+<div class="price">₹2999</div>
+<p>Personal Trainer</p>
+<p>Custom Workout</p>
+<button class="btn btn-primary">Get Started</button>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Gallery</h2>
+
+<div class="grid grid-3 gallery">
+<img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74">
+<img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<img src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a">
+<img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77">
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<h2 class="section-title">Find Us</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Guwahati%20Gym&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+</section>
+
+<section class="section contact">
+<div class="container">
+<h2 class="section-title">Start Free Trial</h2>
+
+<input placeholder="Your Name">
+<input placeholder="Phone Number">
+<textarea placeholder="Your Goal"></textarea>
+
+<button class="btn btn-primary">Book Free Trial</button>
+
+</div>
+</section>
+
+<div class="footer">
+Iron Forge Fitness © 2026 | All Rights Reserved
+</div>
+
+<a class="whatsapp" href="#">WhatsApp</a>
+
+</body>
+</html>
